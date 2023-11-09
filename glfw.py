@@ -50,5 +50,7 @@ if host.os == jmake.Platform.WIN32:
 glfw.add(jmake.fullpath(files))
 glfw.include(jmake.fullpath('include'))
 
+glfw.export(includes=jmake.fullpath('include'))
+
 workspace.add(glfw)
 jmake.generate(workspace)
