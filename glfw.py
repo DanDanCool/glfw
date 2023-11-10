@@ -47,7 +47,7 @@ if host.os == jmake.Platform.WIN32:
     glfw.define('_GLFW_WIN32', 1)
     glfw.compile('/W3')
 
-glfw.add(files)
+glfw.add(jmake.fullpath(files))
 glfw.include(jmake.fullpath('include'))
 
 glfw.export(includes=jmake.fullpath('include'))
