@@ -52,5 +52,8 @@ glfw.include(jmake.fullpath('include'))
 
 glfw.export(includes=jmake.fullpath('include'))
 
+debug = glfw.filter('debug')
+debug['debug'] = True
+
 workspace.add(glfw)
 jmake.generate(workspace)
