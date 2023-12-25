@@ -26,7 +26,7 @@ files = [
         'src/null_joystick.c'
         ]
 
-host = jmake.Host()
+host = jmake.Env()
 if host.os == jmake.Platform.WIN32:
     files.extend([
             'src/win32_platform.h',
